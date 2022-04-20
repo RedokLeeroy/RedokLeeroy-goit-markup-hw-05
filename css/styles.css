@@ -274,6 +274,32 @@ body {
     display: block;
 }
 
+.image-desc{
+    position: relative;
+}
+
+.image-display-desription{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-description{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
 .articles-header {
     font-weight: 700;
     font-size: 14px;
