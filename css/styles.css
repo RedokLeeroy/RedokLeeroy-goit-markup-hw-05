@@ -506,7 +506,9 @@ body {
     height: 44px;
     background-color: #ffffff;
     border-radius: 50%;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -590,7 +592,9 @@ body {
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -648,6 +652,36 @@ body {
     justify-content: center;
     cursor: pointer;
 }
+
+.image-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.product-descr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    transform: translateY(100%);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition: transform 250ms linear;
+}
+
+.product-wrapper:hover .product-descr {
+    transform: translateY(0);
+}
+
 
 .blue {
     color: var(--brand-color-blue);
