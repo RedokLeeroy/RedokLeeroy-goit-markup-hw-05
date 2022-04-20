@@ -701,8 +701,9 @@ body {
     letter-spacing: 0.03em;
     color: #ffffff;
     background-color: rgba(33, 150, 243, 0.9);
-
-    transition: transform 250ms linear;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
 }
 
 .product-wrapper:hover .product-descr {
