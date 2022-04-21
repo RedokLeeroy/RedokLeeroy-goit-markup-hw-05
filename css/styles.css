@@ -280,7 +280,6 @@ body {
 
 .image-display-desription{
     position: absolute;
-    content: "";
     bottom: 0;
     left: 0;
     background: rgba(47, 48, 58, 0.8);
@@ -326,7 +325,7 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--brand-color-gray);
+    color: var(--brand-color-black);
     margin: 0px;
     margin-bottom: 4px;
 }
@@ -505,7 +504,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: color;
+    transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -643,7 +642,9 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 350ms linear
+    transition-property: opacity, visibility;
+    transition-duration: 350ms;
+    transition-timing-function: linear;
 }
 
 .backdrop.is-open {
